@@ -8,8 +8,8 @@ pipeline{
         }
         stage('train'){
             steps{
-                bat label: '', script: '''cd /Scripts/
-python training_v2.py '''
+                bat label: '', script: '''cd /Training/
+python Training_v2.py '''
             }
         }
         stage('checkin'){
