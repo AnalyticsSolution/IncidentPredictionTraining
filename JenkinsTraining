@@ -3,7 +3,7 @@ pipeline{
         stages{
         stage('checkout'){
             steps{
-                git credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/IncidentPredictionTraining.git'
+                git branch: 'main', credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/IncidentPredictionTraining.git'
             }
         }
         stage('train'){
