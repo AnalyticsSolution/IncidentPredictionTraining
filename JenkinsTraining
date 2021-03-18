@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+        stages{
+        stage('checkout'){
+            steps{
+                git credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/IncidentPredictionTraining.git'
+            }
+        }
+        stage('train'){
+            steps{
+                bat label: '', script: '''cd /Scripts/
+python training_v2.py '''
+            }
+        }
+        stage('checkin'){
+            steps{
+                bat label: '', script: '''git pull origin main
+		git add .
+git commit -m "Pushing Output files to GIT repo"
+git push origin main
+'''
+            }
+		}
+	}
+	}
+	
+	
