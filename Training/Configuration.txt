@@ -1,10 +1,10 @@
 [Paths]
 
-model_path = ../Models
-metric_path = ../Metrics
-le_path = ../columns_le
-input_path = ../Input
-output_path = ../Output
+model_path = ../Models/
+metric_path = ../Metrics/
+le_path = ../columns_le/
+input_path = ../Input/
+output_path = ../Output/
 
 [Date]
 
