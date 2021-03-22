@@ -1,18 +1,18 @@
 pipeline{
     agent any
         stages{
-        stage('checkout'){
+        stage('Git Checkout'){
             steps{
                 git branch: 'main', credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/IncidentPredictionTraining.git'
             }
         }
-        stage('train'){
+        stage('Training the model'){
             steps{
                 bat label: '', script: '''cd Training/
 python Training_v2.py '''
             }
         }
-        stage('checkin'){
+        stage('Checkin output to Git'){
             steps{
                 bat label: '', script: '''git pull origin main
 		git add .
