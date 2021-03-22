@@ -6,7 +6,7 @@ pipeline{
                 git branch: 'main', credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/Sample-ML-POC.git'
             }
         }
-        stage('Training the model'){
+        stage('Scoring the model'){
             steps{
                 bat label: '', script: '''cd Scoring/
 python Scoring_v2.py '''
