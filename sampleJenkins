@@ -12,6 +12,12 @@ pipeline{
 python Scoring_v2.py '''
             }
         }
+	stage('Validating the model'){
+            steps{
+                bat label: '', script: '''cd Validation/
+python Validation_v2.py '''
+            }
+        }
         stage('Checkin output to Git'){
             steps{
                 bat label: '', script: '''git pull origin main
