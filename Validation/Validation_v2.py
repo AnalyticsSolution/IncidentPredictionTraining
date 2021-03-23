@@ -7,7 +7,8 @@ warnings.filterwarnings("ignore")
 import pandas as pd
 # import pyodbc
 import numpy as np
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 import configparser
 import datetime
 # from sqlalchemy import create_engine
