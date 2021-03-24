@@ -90,7 +90,7 @@ def prediction(df, j = ""):
 # loading dataset
 
 # INC_df = pd.read_sql_query(query, con)
-INC_df = pd.read_csv(r'../Input/INC_df_1.csv')
+INC_df = pd.read_csv(r'../Input/data_pre.csv')
 
 INC_df.columns = ['discovery','discovery source','customerseverity','devicetype_en','service name_en','province']
 
