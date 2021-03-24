@@ -18,7 +18,8 @@ def data_prep(df):
 
     # Deriving new variable
     
-    df_INC['discovery'] = pd.to_datetime(df_INC['discovery'], unit='s')
+    # df_INC['discovery'] = pd.to_datetime(df_INC['discovery'], unit='s')
+    df_INC['discovery'] = pd.to_datetime(df_INC['discovery'])
     df_INC['day'] = df_INC['discovery'].dt.day_name()
     df_INC['month'] = df_INC['discovery'].apply(lambda x: calendar.month_abbr[x.month])
     df_INC['BH'] = df_INC['discovery'].dt.time
