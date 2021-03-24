@@ -100,6 +100,6 @@ print("Model building started...")
 
 metrics = modelbuild(train_df, DS = 'User Created')
 
-output.to_csv(r'../Output/prediction_model_metrics.csv')
+metrics.to_csv(r'../Output/prediction_model_metrics.csv')
 
 print("Models has been trained.")
