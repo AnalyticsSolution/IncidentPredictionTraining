@@ -100,6 +100,7 @@ print("Model building started...")
 
 metrics = modelbuild(train_df, DS = 'User Created')
 
-metrics.to_csv(r'../Output/prediction_model_metrics.csv')
+metrics.insert(0, 'TimeStamp', pd.to_datetime('now').replace(microsecond=0))
+metrics.to_csv('../Metrics/metrics.csv',mode='a',header=True,index=False)
 
 print("Models has been trained.")
