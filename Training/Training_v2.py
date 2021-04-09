@@ -5,6 +5,8 @@ import os.path
 warnings.filterwarnings("ignore")
 import pandas as pd
 import numpy as np
+import time
+from datetime import datetime
 from sklearn.metrics import mean_squared_error,r2_score
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import LinearRegression
@@ -101,7 +103,8 @@ print("Model building started...")
 
 metrics = modelbuild(train_df, DS = 'User Created')
 
-metrics.insert(0, 'TimeStamp', pd.to_datetime('now').replace(microsecond=0))
+ts = time.time()
+metrics.insert(0, 'TimeStamp', datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
 
 
 if os.path.isfile(r'../Output/prediction_model_metrics.csv'):
