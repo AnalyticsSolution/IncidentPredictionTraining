@@ -127,6 +127,9 @@ output = output[['date', 'month', 'day', 'BH', 'province', 'customerseverity', '
                  'service name_en','discover source', 'Predicted_incidents']]
 
 
-output.to_csv(r'../Output/prediction_output.csv')
+if os.path.isfile(r'../Output/prediction_output.csv'):
+    output.to_csv(r'../Output/prediction_output.csv', index=False,mode='a',header=False)
+else:
+    output.to_csv(r'../Output/prediction_output.csv', index=False,header=True)
 
 print('Prediction done.')
