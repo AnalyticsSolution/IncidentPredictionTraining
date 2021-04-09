@@ -132,4 +132,8 @@ engine = create_engine(conn_str)
 output.to_sql(name='IncidentValidation', con=engine, if_exists='replace', index=False)
 '''
 
-output.to_csv(r'../Output/validation_output.csv',index=False)
+
+if os.path.isfile(r'../Output/validation_output.csv'):
+    output.to_csv(r'../Output/validation_output.csv', mode='a',header=False,index=False)
+else:
+    output.to_csv(r'../Output/validation_output.csv',index=False,header=True)
