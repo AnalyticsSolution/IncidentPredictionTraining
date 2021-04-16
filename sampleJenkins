@@ -1,0 +1,31 @@
+pipeline{
+    agent any
+        stages{
+        stage('Git Checkout'){
+            steps{
+                git branch: 'main', credentialsId: '7e4950e0-0efe-45b9-bfc2-cccdef976cf9', url: 'https://github.com/AnalyticsSolution/Sample-ML-POC.git'
+            }
+        }
+        stage('Scoring the model'){
+            steps{
+                bat label: '', script: '''cd Scoring/
+python Scoring_v2.py '''
+            }
+        }
+	stage('Validating the model'){
+            steps{
+                bat label: '', script: '''cd Validation/
+python Validation_v2.py '''
+            }
+        }
+        stage('Checkin output to Git'){
+            steps{
+                bat label: '', script: '''git pull origin main
+		git add .
+git commit -m "Pushing Output files to GIT repo"
+git push origin main
+'''
+            }
+		}
+	}
+	}

@@ -1,0 +1,14 @@
+[Paths]
+
+model_path = ../Models/
+metric_path = ../Metrics/
+le_path = ../columns_le/
+input_path = ../Input/
+output_path = ../Output/
+
+[Date]
+
+validation_date = 22-04-2020
+prediction_date = 22-04-2020
+validation_range = 10
+prediction_range = 5
