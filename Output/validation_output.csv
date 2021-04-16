@@ -2034,3 +2034,14 @@ date,month,day,BH,province,customerseverity,devicetype_en,service name_en,discov
 2020-04-20,Apr,Monday,BH,OtherUSA,4,Switch,MISN,User Created,1,1
 2020-04-20,Apr,Monday,NBH,OtherUSA,3,Others,MISN,User Created,1,1
 2020-04-21,Apr,Tuesday,NBH,OtherUSA,2,Router,MISN,User Created,1,1
+2020-04-13,Apr,Monday,BH,OtherUSA,4,Router,MISN,User Created,1,1
+2020-04-14,Apr,Tuesday,NBH,OtherUSA,5,Others,MISN,User Created,3,1
+2020-04-14,Apr,Tuesday,NBH,OtherUSA,5,Switch,MISN,User Created,1,1
+2020-04-15,Apr,Wednesday,BH,OtherUSA,3,Router,MISN,User Created,1,1
+2020-04-17,Apr,Friday,BH,OtherUSA,2,Others,MISN,User Created,1,1
+2020-04-17,Apr,Friday,BH,OtherUSA,4,Router,MISN,User Created,1,1
+2020-04-17,Apr,Friday,NBH,OtherUSA,3,Router,MISN,User Created,1,1
+2020-04-19,Apr,Sunday,BH,OtherUSA,3,Others,IPVPN,User Created,1,1
+2020-04-20,Apr,Monday,BH,OtherUSA,4,Switch,MISN,User Created,1,1
+2020-04-20,Apr,Monday,NBH,OtherUSA,3,Others,MISN,User Created,1,1
+2020-04-21,Apr,Tuesday,NBH,OtherUSA,2,Router,MISN,User Created,1,1
