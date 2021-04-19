@@ -1957,3 +1957,10 @@ date,month,day,BH,province,customerseverity,devicetype_en,service name_en,discov
 2020-04-27,Apr,Monday,BH,OtherUSA,2,Others,MISN,User Created,1
 2020-04-27,Apr,Monday,BH,OtherUSA,4,Router,MISN,User Created,1
 2020-04-27,Apr,Monday,NBH,OtherUSA,3,Router,MISN,User Created,2
+2020-04-23,Apr,Thursday,NBH,OtherUSA,5,Others,MISN,User Created,1
+2020-04-23,Apr,Thursday,NBH,OtherUSA,5,Switch,MISN,User Created,1
+2020-04-24,Apr,Friday,BH,OtherUSA,3,Others,IPVPN,User Created,1
+2020-04-25,Apr,Saturday,BH,OtherUSA,3,Router,MISN,User Created,1
+2020-04-26,Apr,Sunday,NBH,OtherUSA,5,Others,MISN,User Created,1
+2020-04-26,Apr,Sunday,NBH,OtherUSA,5,Switch,MISN,User Created,1
+2020-04-27,Apr,Monday,BH,OtherUSA,3,Router,MISN,User Created,1
